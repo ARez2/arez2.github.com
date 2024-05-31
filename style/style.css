@@ -22,7 +22,7 @@ body {
 
 a { 
     color: white;
-}   
+}
 
 .cstm-center {
     margin-top: 10%;
@@ -31,5 +31,5 @@ a {
     padding: 15px;
     width: 30%;
     min-width: 10cm;
-    border: 2px inset green;
+    border: 2px inset darkgreen;
 }
