@@ -18,18 +18,51 @@ body {
     font-family: "CourierPrime", monospace;
     font-size: 120%;
     color: white;
+    margin-bottom: 0px;
 }
 
 a { 
     color: white;
 }
 
-.cstm-center {
+.center {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
     width: 30%;
-    min-width: 10cm;
+    min-width: 221px;
     border: 2px inset darkgreen;
+}
+
+
+@media only screen and (max-width: 11cm) {
+    #hideborder {
+        border: 0px;
+    }
+}
+
+
+.spritesheet {
+    height: 64px;
+    width: 320px;
+    background: url("../static/CampFireFinished.png");
+    animation: sprite 0.5s steps(5) infinite;
+}
+@keyframes sprite {
+    to { background-position: -320px; }
+}
+
+.elmo {
+    width: 100%;
+    min-width: 221px;
+    height: 100%;
+    margin-bottom: 0;
+    image-rendering: pixelated;
+    margin-top: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
